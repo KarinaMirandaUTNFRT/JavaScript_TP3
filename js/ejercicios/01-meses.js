@@ -17,6 +17,6 @@ document.writeln("<h1>Lista de Meses</h1>");
 document.writeln("<ul>"); // Empezamos una lista desordenada
 // Usamos un bucle for para recorrer el arreglo
 for (let i = 0; i < meses.length; i++) {
-    document.write("<li>" + meses[i] + "</li>");
+    document.writeln("<li>" + meses[i] + "</li>");
 }
-document.write("</ul>"); // Cerramos la lista
+document.writeln("</ul>"); // Cerramos la lista
