@@ -1,5 +1,6 @@
 let ciudades = []; //array vacio
-while (true) {  // ingresa nombres de ciudades hasta que el usuario cancele
+while (true) {
+  // ingresa nombres de ciudades hasta que el usuario cancele
   let entrada = prompt(
     "Ingresá el nombre de una ciudad (o presioná Cancelar para terminar):",
   );
@@ -16,12 +17,13 @@ document.writeln(
 // Recordá: la posición 1 es el índice 0
 document.writeln("<ul>");
 document.writeln(
-  "<li>Elemento 1ra posición: " + (ciudades[0] || "No existe") + "</li>", 
-)
-document.writeln(
-  "<li>Elemento 3ra posición: " + (ciudades[2] || "No existe") + "</li>", 
+  "<li>Elemento 1ra posición: " + (ciudades[0] || "No existe") + "</li>",
 );
-document.writeln(  //length te devuelve la cantidad total de datos que se van guardando al ir ingresando
+document.writeln(
+  "<li>Elemento 3ra posición: " + (ciudades[2] || "No existe") + "</li>",
+);
+document.writeln(
+  //length te devuelve la cantidad total de datos que se van guardando al ir ingresando
   "<li>Elemento última posición: " +
     (ciudades[ciudades.length - 1] || "No existe") +
     "</li>",
@@ -29,7 +31,7 @@ document.writeln(  //length te devuelve la cantidad total de datos que se van gu
 document.writeln("</ul>");
 
 // Añadir "París" en la última posición
-ciudades.push("París");  //agrega un elemento nuevo al final de un arreglo.
+ciudades.push("París"); //agrega un elemento nuevo al final de un arreglo.
 
 // Escribir el elemento que ocupa la segunda posición (índice 1)
 document.writeln(
@@ -47,6 +49,6 @@ if (ciudades.length >= 2) {
 document.writeln("<h2>Arreglo de Ciudades:</h2>");
 document.writeln("<ul>");
 for (let i = 0; i < ciudades.length; i++) {
-  document.writeln("<li> Elemento:" + ciudades[i] + "</li>");
+  document.writeln("<li> Elemento: " + ciudades[i] + "</li>");
 }
 document.writeln("</ul>");
